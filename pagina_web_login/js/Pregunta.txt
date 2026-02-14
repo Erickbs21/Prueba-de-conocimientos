@@ -1,0 +1,11 @@
+Qué podría validar el servidor al recibir la información del login?
+
+* El servidor debe validar que los datos recibidos sean correctos, seguros y válidos antes de permitir el acceso. Entre las principales validaciones se encuentran:
+* Que los campos de usuario y contraseña no vengan vacíos.
+* Que el usuario exista en la base de datos.
+* Que la contraseña sea correcta y esté encriptada.
+* Que el usuario se encuentre activo o habilitado.
+* Que no se exceda el número de intentos fallidos de inicio de sesión.
+* Que los datos no contengan inyección SQL o código malicioso.
+* Que la sesión se cree correctamente después de una autenticación válida.
+* Que la solicitud provenga de un origen autorizado.
