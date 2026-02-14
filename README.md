@@ -1,7 +1,7 @@
-#Prueba Técnica: .NET y Tecnologías Relacionadas
-Este repositorio contiene la resolución de la prueba de conocimientos y aptitudes técnicas para el perfil de Desarrollador .NET
+# Prueba Técnica: .NET y Tecnologías Relacionadas
+# Este repositorio contiene la resolución de la prueba de conocimientos y aptitudes técnicas para el perfil de Desarrollador .NET
 
-#Contenido:
+# Contenido:
 Consumo de API:
 
 Este proyecto integra:
@@ -18,7 +18,7 @@ Página web que consume una API pública usando fetch
 
 Separación por capas y archivos
 
-##Base de Datos (SQL Server)
+## Base de Datos (SQL Server)
 Tablas creadas
 
 Catálogos
@@ -53,7 +53,7 @@ Mensajes asignados al producto 2
 Mensajes no asignados al producto 3
 Productos no asignados al proyecto 2
 
-##Aplicación en C# (Consola)
+## Aplicación en C# (Consola)
 Funcionalidades:
 
 -Conexión a SQL Server mediante cadena de conexión
