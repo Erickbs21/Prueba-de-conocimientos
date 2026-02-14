@@ -1,0 +1,17 @@
+¿Cuáles son las diferencias principales versus hacerlo solamente con HTML y JavaScript?
+
+HTML y JavaScript:
+La validación ocurre en el navegador.
+Puede ser modificada o deshabilitada por el usuario.
+No tiene acceso directo a bases de datos.
+Es menos segura para validar credenciales.
+Solo sirve para validar campos vacíos o formato.
+
+ASP / ASPX:
+
+La validación ocurre en el servidor.
+No puede ser alterada por el usuario.
+Permite consultar bases de datos.
+Es más segura para autenticar usuarios.
+Permite manejar sesiones y permisos.
+Protege contra inyecciones y manipulaciones del cliente.
