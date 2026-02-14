@@ -1,0 +1,20 @@
+JSON:
+
+Formato más ligero y compacto.
+Usa pares clave-valor.
+No utiliza etiquetas de apertura y cierre.
+Es más fácil de procesar en JavaScript y APIs REST.
+Ocupa menos espacio en red.
+La estructura es más simple y legible.
+Muy usado en servicios web modernos.
+Ideal para enviar datos encriptados dentro de campos.
+
+XML:
+
+Formato más pesado y extenso.
+Utiliza etiquetas de apertura y cierre.
+Requiere más líneas para representar la misma información.
+Es más usado en sistemas antiguos (legacy) y servicios SOAP.
+Es más estricto en su estructura.
+Más difícil de leer manualmente.
+También puede transportar datos encriptados dentro de etiquetas.

@@ -1,0 +1,13 @@
+{
+  "sistemaOrigen": "CoreBancario",
+  "sistemaDestino": "SistemaTarjetas",
+  "localizacion": "Guatemala",
+  "tarjeta": {
+    "numeroTarjetaEncriptado": "U2FsdGVkX1+9fL8TQx4kJm8F2sM3QxR8Wc=",
+    "idCliente": "C12345",
+    "nombreCliente": "Juan Perez",
+    "fechaExpiracion": "12/28",
+    "tipo": "Credito",
+    "algoritmo": "AES-256"
+  }
+}
