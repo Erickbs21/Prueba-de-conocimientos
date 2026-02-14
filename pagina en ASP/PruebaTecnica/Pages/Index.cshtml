@@ -1,0 +1,45 @@
+﻿@page
+@model PruebaTecnica.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/estilos.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login Prueba Técnica</h2>
+        <form method="post">
+            <input type="text" asp-for="Usuario" placeholder="Username" />
+            <div class="password-container">
+                <input type="password" asp-for="Password" placeholder="Password" id="password" />
+                <span class="ver" onclick="verPassword()">👁</span>
+            </div>
+            <button type="submit">SIGN IN</button>
+
+            <div class="opciones">
+                <label><input type="checkbox"> Recuérdame</label>
+                <a href="#">Olvidé mi contraseña</a>
+            </div>
+        </form>
+
+        <!-- Aquí se imprime el mensaje -->
+        <p style="color:white; margin-top:10px;">@Model.Mensaje</p>
+
+
+        <p class="or">O iniciar sesión con</p>
+        <div class="social">
+            <button>Facebook</button>
+            <button>Twitter</button>
+        </div>
+    </div>
+
+    <script src="~/js/script.js"></script>
+</body>
+</html>

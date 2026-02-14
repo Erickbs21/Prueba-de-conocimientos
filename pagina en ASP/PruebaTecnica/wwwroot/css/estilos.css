@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;              /* Quita márgenes por defecto */
+    padding: 0;             /* Quita relleno por defecto */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del body con imagen de fondo*/
+body {
+    height: 100vh; /* Alto completo de la pantalla */
+    background: url("../img/fondo.jpg") no-repeat center center/cover; /* Imagen de fondo */
+    display: flex; /* Centra el login */
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contenedor principal del login*/
+.login-container {
+    background: rgba(0,0,0,0.4); /* Fondo oscuro transparente */
+    padding: 40px;               /* Espacio interno */
+    border-radius: 15px;         /* Bordes redondeados */
+    width: 350px;                /* Ancho fijo */
+    text-align: center;          /* Centrar texto */
+    color: white;                /* Texto blanco */
+}
+
+/* Título del login */
+.login-container h2 {
+    margin-bottom: 10px;
+}
+
+/* Texto debajo del título */
+.login-container p {
+    margin-bottom: 20px;
+}
+
+/*Inputs de usuario y password*/
+input {
+    width: 100%;         /* Ocupa todo el ancho */
+    padding: 12px;       /* Espacio interno */
+    border-radius: 20px; /* Bordes redondeados */
+    border: none;        /* Sin borde */
+    margin-bottom: 15px; /* Espacio entre campos */
+    outline: none;       /* Quita borde al hacer click */
+}
+
+/* Contenedor del input password y el icono del ojo */
+.password-container {
+    position: relative; /* Permite posicionar el ojo */
+}
+
+/* Icono para mostrar/ocultar contraseña */
+.password-container .ver {
+    position: absolute;
+    right: 10px;   /* A la derecha */
+    top: 10px;     /* A la altura del input */
+    cursor: pointer; /* Cambia cursor a mano */
+}
+
+/* Botón de iniciar sesión*/
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background: #f3c6a5; /* Color del botón */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 
+   Opciones:  recuerdame / olvide mi contraseña
+*/
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Enlace de olvido su contraseña */
+.opciones a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Texto "Iniciar sesion con" */
+.or {
+    margin: 20px 0 10px;
+}
+
+/*Botones de redes socialess*/
+.social button {
+    width: 45%;
+    margin: 5px;
+    background: white;
+}
+/*ojo de ver contra*/
+.password-container .ver:hover {
+    color: rgb(0, 0, 0);
+}
