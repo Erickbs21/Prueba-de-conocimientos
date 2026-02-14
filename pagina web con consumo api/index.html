@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeAPI Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+    img {
+      width: 150px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #ff4757;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e84118;
+    }
+  </style>
+</head>
+<body>
+  <h1>Consulta Pokémon con PokeAPI</h1>
+  <input type="text" id="pokemonName" placeholder="Escribe un Pokémon (ej: pikachu)">
+  <button onclick="buscarPokemon()">Buscar</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    async function buscarPokemon() {
+      const nombre = document.getElementById("pokemonName").value.toLowerCase();
+      const url = `https://pokeapi.co/api/v2/pokemon/${nombre}`;
+      
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("Pokémon no encontrado");
+        }
+        const data = await response.json();
+        
+        document.getElementById("resultado").innerHTML = `
+          <div class="card">
+            <h2>${data.name.toUpperCase()}</h2>
+            <img src="${data.sprites.front_default}" alt="${data.name}">
+            <p><strong>Altura:</strong> ${data.height}</p>
+            <p><strong>Peso:</strong> ${data.weight}</p>
+            <p><strong>Tipo:</strong> ${data.types.map(t => t.type.name).join(", ")}</p>
+          </div>
+        `;
+      } catch (error) {
+        document.getElementById("resultado").innerHTML = `<p style="color:red;">${error.message}</p>`;
+      }
+    }
+  </script>
+</body>
+</html>
