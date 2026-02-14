@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<div class="login-container">
+    <h2>Login Prueba Técnica</h2>
+    <form onsubmit="return validar();">
+        
+        
+        <br></br>
+        <input type="text" id="usuario" placeholder="Username">
+
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Password">
+            <span class="ver" onclick="verPassword()">👁</span>
+        </div>
+
+        <button type="submit">SIGN IN</button>
+
+        <!-- Opciones -->
+        <div class="opciones">
+            <label><input type="checkbox"> Recuérdame</label>
+            <a href="#">Olvidé mi contraseña</a>
+        </div>
+    </form>
+
+    <p class="or">O iniciar sesión con</p>
+
+    <div class="social">
+        <button>Facebook</button>
+        <button>Twitter</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
