@@ -1,0 +1,64 @@
+Prueba fase 1. Versión 2: .NET y Tecnologías Relacionadas
+
+1. ASP.NET MVC:
+Es un framework de Microsoft para crear aplicaciones web usando el patrón Modelo-Vista-Controlador. Ayuda a separar la lógica, la interfaz y el flujo de la aplicación.
+
+2. Controlador en MVC:
+El controlador recibe las peticiones del usuario, coordina la lógica con los modelos y devuelve una respuesta, normalmente una vista.
+
+3. Modelo en MVC:
+El modelo representa los datos y la lógica de negocio. Es el que se comunica con la base de datos y define las entidades.
+
+4. Ensamblado:
+Es el resultado de compilar un proyecto en .NET. Puede ser un archivo .dll o .exe que contiene código, metadatos y recursos.
+
+5. LINQ:
+Es una forma de hacer consultas directamente en C# sobre colecciones, bases de datos o XML, con una sintaxis clara y declarativa.
+
+6. appsettings.json:
+Es el archivo de configuración en .NET Core donde se guardan cosas como cadenas de conexión, claves de API y parámetros de la aplicación.
+
+7. Lenguaje más usado en .NET:
+C# por que esta del ecosistema de .NET.
+
+8. Clave foránea:
+Es una relación entre tablas en una base de datos. Asegura que un valor en una columna exista en la clave primaria de otra tabla.
+
+9. GROUP BY:
+Sirve para agrupar registros que tienen valores comunes y aplicar funciones de agregación como SUM, COUNT o AVG.
+
+10. Diferencia entre WHERE y HAVING:
+WHERE filtra los registros antes de agruparlos.
+HAVING filtra los grupos después de aplicar GROUP BY.
+
+11. Vista en SQL:
+Es como una tabla virtual basada en una consulta. Se usa para simplificar consultas complejas o restringir acceso a ciertos datos.
+
+12. Transacción:
+Es un conjunto de operaciones que se ejecutan como una sola unidad. Garantiza que los cambios sean seguros
+
+13. ECMAScript:
+Es el estándar que define cómo funciona JavaScript, asegurando que sea compatible entre navegadores.
+
+14. Función flecha:
+Es una forma corta de escribir funciones en JavaScript.
+Ejemplo: const suma = (a, b) => a + b;
+
+15. Métodos filter() y reduce():
+filter() devuelve un nuevo arreglo con los elementos que cumplen una condición.
+reduce() combina todos los elementos de un arreglo en un único resultado.
+
+16. Ventajas de la inyección de dependencias en ASP.NET:
+Reduce el acoplamiento, facilita las pruebas y hace que el código sea más fácil de mantener y escalar.
+
+17. Procedimiento almacenado vs consultas directas:
+Se usa un procedimiento almacenado cuando quieres reutilizar lógica, mejorar rendimiento (porque ya está compilado) y aumentar seguridad.
+
+18. Mal diseño de claves foráneas:
+Puede causar pérdida de integridad de datos, consultas lentas y problemas de consistencia.
+
+19. Conflicto de merge en Git:
+Sucede cuando dos ramas cambian la misma parte de un archivo. Se resuelve editando el archivo, eligiendo qué cambios conservar y luego confirmando el merge.
+
+20. Vista vs tabla directa:
+Una vista es útil cuando quieres simplificar consultas, restringir acceso a columnas o encapsular lógica de negocio en SQL.
