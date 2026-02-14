@@ -1,0 +1,47 @@
+1. Análisis y diseño de sistemas:
+El análisis consiste en entender qué es lo que el cliente o el negocio necesita realmente, identificando los problemas y los requisitos del software. El diseño es la etapa donde se planifica cómo se va a construir eso técnicamente (diagramas, base de datos, arquitectura).
+a. Metodologías:
+- Cascada (Waterfall): Es la tradicional donde se termina una fase (ej. Requisitos) para empezar la siguiente (ej. Diseño). Es rígida.
+- Scrum: Una metodología ágil donde se trabaja por ciclos cortos llamados Sprints para entregar valor rápido y adaptarse a cambios.
+
+2. Transacciones no manejadas correctamente:
+Si no se usa COMMIT o ROLLBACK, la base de datos puede quedar en un estado inconsistente. Por ejemplo, en una transferencia bancaria, si se resta el dinero de una cuenta pero el sistema falla antes de sumarlo a la otra y no hubo un ROLLBACK, ese dinero se "pierde" en el sistema. El COMMIT asegura que los cambios sean permanentes y el ROLLBACK deshace todo si algo falla en medio del proceso.
+
+3. Importancia del diseño de pantallas:
+Es fundamental porque es lo que el usuario ve y usa; si es confuso, el sistema no sirve aunque el código sea bueno.
+Para que sean eficientes y confiables yo haría:
+- Mantener consistencia (que los botones y colores signifiquen lo mismo en toda la web).
+- Poner validaciones claras (que avise si falta un dato antes de enviar).
+- Usar una jerarquía visual simple para que el usuario no se pierda.
+- Hacer pruebas con usuarios reales para ver dónde se traban.
+
+4. Web Service:
+Es un sistema que permite que dos máquinas o aplicaciones se comuniquen entre sí a través de una red (como internet) usando protocolos estándar.
+a. Diferencia entre API y SOAP:
+Una API es el concepto general de una interfaz de programación para conectar software. SOAP es un protocolo específico y estricto que usa XML para el intercambio de mensajes, mientras que las APIs modernas suelen ser REST y usar JSON, que es más ligero.
+
+5. AJAX y Fetch:
+Ambos sirven para hacer peticiones asíncronas al servidor sin tener que recargar toda la página web.
+- AJAX: Es la forma antigua (usando el objeto XMLHttpRequest), suele ser más complejo de escribir.
+- Fetch: Es la API moderna de JavaScript que usa Promesas, lo cual hace que el código sea mucho más limpio y fácil de leer.
+
+6. Variables de sesión vs LocalStorage:
+- Variables de Sesión (SessionStorage): Los datos solo duran mientras la pestaña o el navegador estén abiertos. Si se cierra la pestaña, se borran.
+- LocalStorage: Los datos se guardan en el navegador del usuario de forma permanente, incluso si apaga la computadora, hasta que el código o el usuario decidan borrarlos.
+
+7. Postback y Callback:
+- Postback: Es cuando una página web envía todo el formulario al servidor y este recarga la página completa para mostrar una respuesta.
+- Callback: Es una función que se pasa a otra función como argumento para que se ejecute después de que termine una tarea (como una petición a una API).
+
+8. Seguridad en un Login:
+- Usar HTTPS para que los datos viajen encriptados.
+- Nunca guardar contraseñas en texto plano; usar hashing (como bcrypt).
+- Implementar un límite de intentos para evitar ataques de fuerza bruta.
+- Usar autenticación de dos factores (2FA) si es posible.
+- Validar y limpiar los inputs para evitar Inyección SQL.
+
+9. Riesgos en intercambio de información sensible:
+- Intercepción de datos (Man-in-the-middle) si no hay cifrado.
+- Robo de tokens o credenciales si se guardan mal en el cliente.
+- Falta de autorización, donde un sistema accede a datos para los que no tiene permiso.
+- Inyección de código malicioso a través de los endpoints de comunicación.
